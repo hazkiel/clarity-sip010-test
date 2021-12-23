@@ -21,7 +21,7 @@
   (if (> i1 i2) i1 i2))
 
 (define-private (calculate-fee (amount uint))
-  (max-of (/ (* amount u15) min-fee)))
+  (max-of (/ (* amount u15)) min-fee))
 
 ;; public methods
 
