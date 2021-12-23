@@ -2,10 +2,11 @@
 name = "claritest"
 requirements = []
 costs_version = 1
+
 [contracts.sip-010-trait]
 path = "contracts/sip-010-trait.clar"
 depends_on = []
 
 [contracts.token-a]
 path = "contracts/token-a.clar"
-depends_on = []
+depends_on = ["sip-010-trait"]
